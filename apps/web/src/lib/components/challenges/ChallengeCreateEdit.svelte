@@ -44,6 +44,7 @@
     flags: Flag[];
     files: ExistingFile[];
     version: number;
+    chainedAfter: string | null;
   }
 </script>
 
@@ -65,6 +66,7 @@
   const slug = $derived(slugify(challengeName));
   let description = $state<string>(challData?.description ?? "");
   let isHidden = $state<boolean>(challData?.isHidden ?? false);
+  let chainedAfter = $state<number | null>(challData?.chainedAfter);
   let visibleAt = $state<string>(challData?.visibleAt ?? "");
   let catInput = $state<string>("");
   let categories = $state<string[]>(challData?.categories || []);
@@ -227,6 +229,7 @@
       visible_at: visibleAt ? new Date(visibleAt).toISOString() : "",
       tags: createTags(),
       private_metadata,
+      chained_after: chainedAfter ?? "", // Use empty string so that server deserializes as null instead of 0 (TODO: WHY?)
     };
     let fileRefsToAdd = existingFiles.map((f) => ({
       id: f.id,
@@ -409,6 +412,19 @@
               bind:value={visibleAt}
               class="input input-bordered w-full focus:outline-none focus:ring-0 focus:ring-offset-0"
               aria-label="Challenge visibility start date and time"
+            />
+          </div>
+
+          <div class="form-control w-full">
+            <label for="visible-at" class="label">
+              <span class="label-text">Chained After (by id)</span>
+            </label>
+            <input
+              type="number"
+              id="chained-after"
+              bind:value={chainedAfter}
+              class="input input-bordered w-full focus:outline-none focus:ring-0 focus:ring-offset-0"
+              aria-label="The id of the challenge that this will be chained after"
             />
           </div>
         </div>

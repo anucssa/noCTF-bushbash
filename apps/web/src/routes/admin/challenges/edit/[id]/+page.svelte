@@ -67,6 +67,7 @@
     tags,
     private_metadata,
     version,
+    chained_after,
   } = challData.r.challenge}
   {@const {
     solve: { flag },
@@ -76,6 +77,7 @@
     id, title, description,
     isHidden: hidden,
     visibleAt: visible_at ?? undefined,
+    chainedAfter: chained_after,
     difficulty: getDifficultyFromTags(tags) as Difficulty | "",
     categories: getCategoriesFromTags(tags),
     customTags: getCustomTagsFromTags(tags),

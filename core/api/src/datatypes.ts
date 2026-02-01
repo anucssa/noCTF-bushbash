@@ -202,6 +202,7 @@ export const Challenge = Type.Object({
   visible_at: Type.Union([TypeDate, Type.Null()]),
   created_at: TypeDate,
   updated_at: TypeDate,
+  chained_after: Type.Union([Type.Number(), Type.Null()]),
 });
 export type Challenge = Static<typeof Challenge>;
 
@@ -224,6 +225,7 @@ export const ChallengeMetadata = Type.Pick(Challenge, [
   "visible_at",
   "created_at",
   "updated_at",
+  "chained_after",
 ]);
 export type ChallengeMetadata = Static<typeof ChallengeMetadata>;
 

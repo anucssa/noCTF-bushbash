@@ -325,6 +325,7 @@ export class ChallengeService {
         hidden: c.hidden,
         visible_at: c.visible_at,
         updated_at: c.updated_at,
+        chained_after: c.chained_after,
       };
     });
   }
