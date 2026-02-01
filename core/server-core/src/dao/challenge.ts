@@ -25,6 +25,7 @@ const METADATA_FIELDS: SelectExpression<DB, "challenge">[] = [
   "visible_at",
   "created_at",
   "updated_at",
+  "chained_after",
 ];
 
 const CREATE_ERROR_CONFIG: PostgresErrorConfig = {
@@ -46,6 +47,7 @@ export class ChallengeDAO {
       tags: v.tags,
       hidden: v.hidden,
       visible_at: v.visible_at,
+      chained_after: v.chained_after,
     };
     try {
       const { id, version, created_at, updated_at } = await this.db
@@ -109,6 +111,7 @@ export class ChallengeDAO {
         "visible_at",
         "created_at",
         "updated_at",
+        "chained_after",
       ]);
     if (typeof idOrSlug === "number") {
       query = query.where("id", "=", idOrSlug);
@@ -131,6 +134,7 @@ export class ChallengeDAO {
       tags: v.tags,
       hidden: v.hidden,
       visible_at: v.visible_at,
+      chained_after: v.chained_after,
     };
     let query = this.db
       .updateTable("challenge")

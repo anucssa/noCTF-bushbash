@@ -7,7 +7,7 @@ import {
 } from "@noctf/api/contract/challenge";
 import { IdParams } from "@noctf/api/params";
 import { BaseResponse } from "@noctf/api/responses";
-import { ForbiddenError, NotFoundError } from "@noctf/server-core/errors";
+import { ChainedNotCompleted, ForbiddenError, NotFoundError } from "@noctf/server-core/errors";
 import { GetRouteKey } from "@noctf/server-core/util/limit_keys";
 import { Policy } from "@noctf/server-core/util/policy";
 import { route } from "@noctf/server-core/util/route";
@@ -121,6 +121,23 @@ export async function routes(fastify: FastifyInstance) {
       ) {
         throw new NotFoundError("Challenge not found");
       }
+
+      if (!admin && challenge.chained_after !== null) {
+        const team = await request.user?.membership;
+        if (!team) {
+          throw new ChainedNotCompleted("You must be a member of a team to view a chained challenge.");
+        }
+
+        const entry = await scoreboardService.getTeam(
+          team.division_id,
+          team.team_id,
+        );
+        if (!entry || entry.solves.find(({ challenge_id }) => challenge_id == challenge.chained_after) === null) {
+          const chained = await challengeService.get(challenge.chained_after);
+          throw new ChainedNotCompleted(`Please solve "${chained.title}" to view this chained challenge.`);
+        }
+      }
+
       reply.header("cache-control", "private, max-age=60");
       return {
         data: challenge,
@@ -224,6 +241,17 @@ export async function routes(fastify: FastifyInstance) {
 
       if (!membership) {
         throw new ForbiddenError("You are not currently part of a team");
+      }
+
+      if (!admin && challenge.chained_after !== null) {
+        const entry = await scoreboardService.getTeam(
+          membership.division_id,
+          membership.team_id,
+        );
+        if (!entry || entry.solves.find(({ challenge_id }) => challenge_id == challenge.chained_after) === null) {
+          const chained = await challengeService.get(challenge.chained_after);
+          throw new ChainedNotCompleted(`Please solve "${chained.title}" to solve this chained challenge.`);
+        }
       }
 
       const { status, created_at } = await challengeService.solve(

@@ -66,6 +66,12 @@ export class ForbiddenError extends ApplicationError {
   }
 }
 
+export class ChainedNotCompleted extends ApplicationError {
+  constructor(message?: string, options?: ErrorOptions) {
+    super(403, "ChainedNotCompleted", message || "Chained challange not completed", options);
+  }
+}
+
 export class NotImplementedError extends ApplicationError {
   constructor(message?: string, options?: ErrorOptions) {
     super(501, "NotImplementedError", message || "Not Implemented", options);
