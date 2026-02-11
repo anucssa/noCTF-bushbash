@@ -83,6 +83,13 @@ body {
 .challenge_card_button {
   width: 14vw;
   min-width: 170px;
+  background-size: contain;
+
+  img {
+    position: absolute;
+    width: 100%;
+    z-index: -10;
+  }
 }
 
 .canvas_holder {

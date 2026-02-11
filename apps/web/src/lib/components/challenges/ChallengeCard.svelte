@@ -29,7 +29,7 @@
   export function getTheme(cats: string[]): string {
     let theme: string = "theme-none";
     cats.forEach((c) => {
-      if (!c.includes("theme")) {
+      if (c.includes("theme")) {
         theme = c;
         return;
       }
@@ -37,8 +37,12 @@
     return theme;
   }
 
-  export function themeToSrc(theme: string): string {
-    return "";
+  export function themeToSrc(theme: string, isSolved: boolean): string {
+    const TOP = "https://disorientation.cssa.club/files/";
+    switch (theme) {
+      case "theme-spiral": return TOP + (isSolved ? "card-spiral-solved.gif" : "card-spiral.gif");
+      default: return "";
+    }
   }
 </script>
 
@@ -53,9 +57,9 @@
 
 <button
   class={`challenge_card_button ${getTheme(data.categories)} text-left card w-60 h-32 pop ${data.isSolved ? "bg-primary text-primary-content" : "bg-base-100"} rounded-lg shadow-black ${data.hidden ? "opacity-40" : ""}`}
+  style='background-image: url({themeToSrc(getTheme(data.categories), data.isSolved)});'
   onclick={() => onclick(data)}
 >
-  <img src={themeToSrc(getTheme(data.categories))} alt="">
   <div class="card-body p-3 flex flex-col">
     <div class="flex flex-row justify-between items-center">
       <div class="card-title line-clamp-1 font-black press-start-2p challenge_card_title">
