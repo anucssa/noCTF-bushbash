@@ -173,7 +173,7 @@ body {
 
     .home_button_div {
       width: 20vw;
-      height: 15vh;
+      height: 20vh;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
