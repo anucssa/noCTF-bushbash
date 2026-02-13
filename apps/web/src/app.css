@@ -114,7 +114,6 @@ body {
 
 .navbar_div {
   align-items: flex-start;
-  z-index: 100;
 }
 
 .navbar_left {
@@ -173,7 +172,7 @@ body {
 
     .home_button_div {
       width: 20vw;
-      height: 15vh;
+      height: 20vh;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -228,6 +227,59 @@ body {
   }
 }
 
+#info_div_container {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+#info_div {
+ width: 80vw;
+ margin-bottom: 200px;
+}
+#start_end_holder {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: center;
+  gap: 10vw;
+  font-size: 20px;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+
+    .time_duration {
+      padding: 11px;
+      color: #000000;
+      box-shadow: 11px 11px 0px #1b171d;
+    }
+
+    #start_title {
+      color: #3FAF8F;
+    }
+
+    #end_title {
+      color: #D79E3A;
+    }
+
+    #start_duration {
+      background: #3FAF8F;
+    }
+
+    #end_duration {
+      background: #D79E3A;
+    }
+  }
+}
+ul li {
+  list-style-type: disc;
+}
+ol li {
+  list-style-type: decimal;
+}
+
 @media screen and (max-width: 1000px) {
   .home_div {
     .home_info_div {
@@ -258,6 +310,10 @@ body {
         align-items: center;
       }
     }
+  }
+
+  #start_end_holder {
+    font-size: 14px;
   }
 }
 

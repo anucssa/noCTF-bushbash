@@ -17,6 +17,7 @@
     <div class="home_button_div">
       <a href="/challenges" class="btn btn-primary text-2xl press-start-2p home_button_challenges">Challenges</a>
       <a href="/team" class="btn btn-accent text-2xl press-start-2p home_button_teamup">Team Up</a>
+      <a href="/info" class="btn btn-neutral text-2xl press-start-2p">Info+Rules</a>
     </div>
   </div>
   <div class="sponsors_div press-start-2p">
