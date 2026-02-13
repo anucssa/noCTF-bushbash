@@ -52,7 +52,9 @@
 }
 
 /* disorientationCTF 2026 - styling */
-
+html {
+  image-rendering: pixelated;
+}
 body {
   color: var(--text_primary);
 }
@@ -83,10 +85,13 @@ body {
 .challenge_card_button {
   width: 14vw;
   min-width: 170px;
-  background-size: contain;
+  background-size: 100%;
+  background-position: 0 0;
 
   img {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     z-index: -10;
   }

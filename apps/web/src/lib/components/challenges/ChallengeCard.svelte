@@ -41,6 +41,7 @@
     const TOP = "https://disorientation.cssa.club/files/";
     switch (theme) {
       case "theme-spiral": return TOP + (isSolved ? "card-spiral-solved.gif" : "card-spiral.gif");
+      case "theme-dna": return TOP + (isSolved ? "card-dna-solved.png" : "card-dna.png");
       default: return "";
     }
   }
