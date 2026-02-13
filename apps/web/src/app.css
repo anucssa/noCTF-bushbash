@@ -233,7 +233,8 @@ body {
   justify-content: flex-start;
 }
 #info_div {
-  width: 80vw;
+ width: 80vw;
+ margin-bottom: 200px;
 }
 #start_end_holder {
   display: flex;

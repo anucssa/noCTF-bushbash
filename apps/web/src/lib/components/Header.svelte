@@ -75,6 +75,9 @@
           <a href="/challenges" class={isActive("/challenges")}>Challenges</a>
         </li>
         <li>
+          <a href="/info" class={isActive("/info")}>Info</a>
+        </li>
+        <li>
           <a href="/scoreboard" class={isActive("/scoreboard")}>Scoreboard</a>
         </li>
         <li>

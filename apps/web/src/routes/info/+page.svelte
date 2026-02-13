@@ -32,25 +32,52 @@ Competition!
   <h2 class="text-4xl"><strong>
     Rules
   </strong></h2><br>
-  <ol>
-    <li>TODO</li>
-    <li>TODO</li>
-    <li>TODO</li>
-    <li>TODO</li>
-    <li>TODO</li>
-  </ol>
+  <ul>
+    <li>
+      Each player must register an individual account <a title="Login Screen" class="link" href="/auth">here</a>.
+      Players may then join/form teams <a title="Teams Screen" class="link" href="/team">here</a>.
+    </li>
+    <li>The flag format is <code>disorientation{"{yourflaghere}"}</code>.</li>
+    <li>
+      Do not attack anything other than the provided infrastructure. In particular, please refrain
+      from abusing any services hosted by ANU.
+    </li>
+    <li>Do not share flags or solutions publicly or with other teams.</li>
+    <li>If you find a correct flag, please don't hold it until the last minute - this
+      ensures the scoreboard always reflects the true progress of each team.
+    </li>
+    <li>
+      Decisions made by the CSSA are final.
+    </li>
+    <li>
+      Enjoy the challenges, learn plenty and have fun!
+    </li>
+  </ul>
   <br>
   <h2 class="text-4xl"><strong>
     Prizes
   </strong></h2><br>
-  TODO
+  To be announced...
   <br>
   <br>
     <hr>
   <br>
   <h2 class="text-4xl"><strong>
-    About the CSSA
+    Contacts
   </strong></h2><br>
-  TODO
+  Have questions about a particular challenge or the competition as a whole? Feel free to contact
+  the CSSA through the following channels:
+  <br><br>
+  <ul>
+    <li>
+      Our <a class="link">Discord Server</a>
+    </li>
+    <li>
+      Our Email <code>anucssacommittee@gmail.com</code> - Please prepend the subject with <code>[CTF]</code> so it can be seen by us.
+    </li>
+  </ul>
+  <br>
+  Note that any clarifications/challenge updates will be announced publicly on this website.
+  Announcements may be viewed on the <a class="link" title="Challenge Screen" href="/challenges">Challenges</a> screen.
   </div>
 </div>
