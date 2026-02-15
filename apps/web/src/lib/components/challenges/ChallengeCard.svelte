@@ -76,7 +76,7 @@
       <div class="card-title line-clamp-1 font-black press-start-2p challenge_card_title">
         {data.title}
       </div>
-      {#if data.chainedAfter !== undefined}
+      {#if data.chainedAfter !== undefined || data.chainedAfter! > 0}
         <div class="tooltip" data-tip={`Chained after "${chainedData?.title ?? "<hidden challenge>"}"`}>
           <Icon class="text-lg" icon="material-symbols:link" />
         </div>
