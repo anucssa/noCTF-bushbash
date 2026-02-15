@@ -42,6 +42,10 @@
     switch (theme) {
       case "theme-spiral": return TOP + (isSolved ? "card-spiral-solved.gif" : "card-spiral.gif");
       case "theme-dna": return TOP + (isSolved ? "card-dna-solved.png" : "card-dna.png");
+      case "theme-explosion": return TOP + (isSolved ? "card-explosion-solved.gif" : "card-explosion.gif");
+      case "theme-cssa": return TOP + (isSolved ? "card-cssa-solved.gif" : "card-cssa.gif");
+      case "theme-atom": return TOP + (isSolved ? "card-atom-solved.gif" : "card-atom.gif");
+      case "theme-canberra": return TOP + (isSolved ? "card-canberra-solved.png" : "card-canberra.png");
       default: return "";
     }
   }
