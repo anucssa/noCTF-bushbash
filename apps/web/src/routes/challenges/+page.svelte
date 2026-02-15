@@ -58,6 +58,7 @@
           isSolved: c.solved_by_me,
           difficulty: getDifficultyFromTags(c.tags),
           hidden: c.hidden,
+          chainedAfter: c.chained_after,
         }))
       : undefined,
   );
@@ -161,7 +162,11 @@
         } else if (r.error) {
           console.error("Failed to load challenge details:", r.error);
           if (modalChallData?.id === challData.id) {
-            toasts.error(`Failed to load details for ${challData.title}`);
+            if (r.error.error === "ChainedNotCompleted") {
+              toasts.error(r.error.message);
+            } else {
+              toasts.error(`Failed to load details for ${challData.title}`);
+            }
             modalVisible = false;
           }
         }
@@ -223,6 +228,7 @@
               >
                 {#each categoryChallenges as challenge (challenge.id)}
                   <ChallengeCard
+                    allChallenges={allChallenges}
                     data={challenge}
                     onclick={onChallengeClicked}
                   />

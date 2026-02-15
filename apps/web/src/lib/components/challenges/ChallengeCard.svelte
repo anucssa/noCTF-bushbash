@@ -9,9 +9,11 @@
     isSolved: boolean;
     difficulty?: string;
     hidden: boolean;
+    chainedAfter: number | undefined;
   }
 
   export interface ChallengeCardProps {
+    allChallenges: ChallengeCardData[];
     data: ChallengeCardData;
     onclick: (c: ChallengeCardData) => void;
   }
@@ -53,23 +55,32 @@
 
 <script lang="ts">
   import Icon from "@iconify/svelte";
+  import authState from "$lib/state/auth.svelte";
   import { categoryToIcon } from "$lib/utils/challenges";
   import { type Difficulty } from "$lib/constants/difficulties";
   import DifficultyChip from "./DifficultyChip.svelte";
 
-  const { data, onclick }: ChallengeCardProps = $props();
+  const { allChallenges, data, onclick }: ChallengeCardProps = $props();
+  const chainedData: ChallengeCardData | undefined = $derived(data.chainedAfter ? allChallenges.find(({ id }) => id === data.chainedAfter) : undefined);
+  const chainedSolved: bool | undefined = $derived(data.chainedAfter ? (chainedData?.isSolved ?? false) : undefined);
 </script>
 
 <button
-  class={`challenge_card_button ${getTheme(data.categories)} text-left card w-60 h-32 pop ${data.isSolved ? "bg-primary text-primary-content" : "bg-base-100"} rounded-lg shadow-black ${data.hidden ? "opacity-40" : ""}`}
-  style='background-image: url({themeToSrc(getTheme(data.categories), data.isSolved)});'
+  style={((data.hidden || chainedSolved === false) ? "z-index: 1;" : "") + "background-image: url({themeToSrc(getTheme(data.categories), data.isSolved)});" /* hack to fix tooltips being hidden with opacity-40 */}
+  class={`challenge_card_button ${getTheme(data.categories)} text-left card w-60 h-32 pop ${data.isSolved ? "bg-primary text-primary-content" : "bg-base-100"} rounded-lg shadow-black ${(data.hidden || chainedSolved === false) ? "opacity-40" : ""}`}
   onclick={() => onclick(data)}
+  disabled={!authState.isAdmin && chainedSolved === false}
 >
   <div class="card-body p-3 flex flex-col">
     <div class="flex flex-row justify-between items-center">
       <div class="card-title line-clamp-1 font-black press-start-2p challenge_card_title">
         {data.title}
       </div>
+      {#if data.chainedAfter !== undefined}
+        <div class="tooltip" data-tip={`Chained after "${chainedData?.title ?? "<hidden challenge>"}"`}>
+          <Icon class="text-lg" icon="material-symbols:link" />
+        </div>
+      {/if}
       {#if data.hidden}
         <Icon class="text-lg" icon="material-symbols:visibility-off" />
       {/if}
