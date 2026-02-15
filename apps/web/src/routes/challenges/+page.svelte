@@ -194,8 +194,6 @@
 </script>
 
 <div class="w-full mx-auto px-4 sm:px-6 lg:px-8 h-auto mt-8">
-  <div class="text-center text-4xl font-black pb-4">Challenges</div>
-
   {#if apiChallenges.loading}
     <div class="flex flex-col items-center gap-4 mt-16">
       <div class="loading loading-spinner loading-lg text-primary"></div>
@@ -209,27 +207,24 @@
       </p>
     </div>
   {:else}
-    <div
-      class="flex flex-col md:grid grid-cols-[min(25%,20rem)_1fr] gap-6 lg:gap-8 py-8"
-    >
-      <div class="md:sticky top-8 self-start mb-6 md:mb-0 md:mt-8">
+      <div hidden class="md:sticky top-8 self-start mb-6 md:mb-0 md:mt-8">
         <ChallengeFilterer
           challenges={allChallenges || []}
           onFilter={(res) => (challenges = res)}
         />
       </div>
 
-      <div class="flex flex-wrap gap-6 h-fit">
+      <div class="flex gap-6 h-fit justify-center">
         {#if challenges !== undefined && Object.keys(challengesByCategory).length > 0}
           {#each Object.entries(challengesByCategory) as [category, categoryChallenges] (category)}
-            <div class="flex flex-col gap-2">
+            <div class="flex flex-col gap-2 chal_col">
               <h1
-                class="text-2xl text-center w-full md:text-left p-3 rounded font-bold top-0 py-2 z-10"
+                class="text-xl text-center w-full md:text-left p-3 rounded font-bold top-0 py-2 z-10 press-start-2p chal_col_title"
               >
                 {category}
               </h1>
               <div
-                class="flex flex-wrap md:justify-start justify-center pt-2 gap-4 min-w-[150px]"
+                class="flex flex-col md:justify-start justify-center pt-2 gap-4 min-w-[150px]"
               >
                 {#each categoryChallenges as challenge (challenge.id)}
                   <ChallengeCard
@@ -251,7 +246,6 @@
           </p>
         {/if}
       </div>
-    </div>
 
     <ChallengeModal
       visible={modalVisible}
