@@ -70,7 +70,7 @@ Competition!
   <br><br>
   <ul>
     <li>
-      Our <a class="link">Discord Server</a>
+      Our <a href="https://cssa.club/discord" target="_blank"  rel="noopener noreferrer" class="link">Discord Server</a>
     </li>
     <li>
       Our Email <code>anucssacommittee@gmail.com</code> - Please prepend the subject with <code>[CTF]</code> so it can be seen by us.
