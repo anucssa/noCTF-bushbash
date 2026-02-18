@@ -78,13 +78,18 @@ body {
   margin-bottom: 20px;
 }
 
+.challenge_container {
+  min-width: 1500px;
+}
+
+
 .challenge_card_title {
   font-size: 15px;
 }
 
 .challenge_card_button {
-  width: 14vw;
-  min-width: 170px;
+  width: 224px;
+  height: 128px;
   background-size: 100%;
   background-position: 0 0;
 
