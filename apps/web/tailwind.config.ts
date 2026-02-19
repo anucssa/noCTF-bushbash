@@ -35,7 +35,7 @@ export default {
     themes: [
       {
         light: {
-          ...daisyuiThemes["light"],
+          // ...daisyuiThemes["light"],
           primary: "#D79E3A",
           secondary: "#D79E3A",
           accent: "#3faf8f",

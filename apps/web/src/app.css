@@ -54,6 +54,7 @@
 /* disorientationCTF 2026 - styling */
 html {
   image-rendering: pixelated;
+  color-scheme: dark;
 }
 body {
   color: var(--text_primary);

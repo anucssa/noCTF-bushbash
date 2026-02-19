@@ -57,7 +57,9 @@ Competition!
   <h2 class="text-4xl"><strong>
     Prizes
   </strong></h2><br>
-  To be announced...
+  The following prizes are offered to the top teams in the <strong>ANU Division</strong>:<br><br>
+  <strong>1st, 2nd, 3rd:</strong> <a href="https://www.bsidesau.com.au" class="link">B-Sides Tickets</a> for all members!<br>
++ Exclusive <a href="https://tantosec.com" class="link">TantoSec</a> goods, Rubiks Cubes, and CSSA hoodies!
   <br>
   <br>
     <hr>
