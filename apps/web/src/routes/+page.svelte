@@ -10,9 +10,9 @@
     <div class="home_info_div_left text-l press-start-2p">
       The premier student-led CTF of ANU!
       <br><br>
-      Feb 18, 12pm<br>
+      Feb 18, 2pm<br>
       |<br>
-      Feb 22, 3pm
+      Feb 22, 2pm
     </div>
     <div class="home_button_div">
       <a href="/challenges" class="btn btn-primary text-2xl press-start-2p home_button_challenges">Challenges</a>
@@ -24,6 +24,12 @@
     <span>Sponsored by</span>
     <a href="https://tantosec.com/" target="_blank" rel="noopener noreferrer" title="TantoSec - Event Sponsor">
       <img src="https://disorientation.cssa.club/files/tantosec.png" alt="TantoSec - sharper cyber security"/>
+    </a>
+    <a href="https://www.bsidesau.com.au/" target="_blank" rel="noopener noreferrer" title="BSides - Event Sponsor">
+      <img src="https://disorientation.cssa.club/files/bsides.png" alt="BSides"/>
+    </a>
+    <a href="https://infosectcbr.com.au/" target="_blank" rel="noopener noreferrer" title="Infosect - Event Sponsor">
+      <img src="https://disorientation.cssa.club/files/infosect.png" alt="Infosect"/>
     </a>
   </div>
   <div class="sponsors2_div press-start-2p">

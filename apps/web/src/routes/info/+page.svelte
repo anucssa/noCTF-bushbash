@@ -13,7 +13,7 @@ Competition!
   <ul class="text-xl">
     <li>Beginner-friendly Computer Security challenges</li>
     <li>Teams of up to <strong>6</strong> players</li>
-    <li><strong>$300</strong> total prize value for top 3 teams</li>
+    <li><strong>$1000</strong> total prize value for top 3 teams</li>
   </ul>
 <br>
   <div id="start_end_holder" class="flex press-start-2p">
