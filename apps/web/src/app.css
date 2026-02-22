@@ -280,6 +280,11 @@ body {
     }
   }
 }
+
+.logos {
+  font-size: 18px;
+}
+
 ul li {
   list-style-type: disc;
 }
