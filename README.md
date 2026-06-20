@@ -1,4 +1,4 @@
-noCTF
+noCTF - BushBash 2026!
 =====
 
 Welcome to the noCTF monorepo. There's a lot of code here so you must be wondering on how to
