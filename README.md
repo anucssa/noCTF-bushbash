@@ -1,5 +1,8 @@
-noCTF
+noCTF - disorientation
 =====
+
+this is a copy of the disorientationctf website for reference cuz the old repo has too many
+branches and is confusing
 
 Welcome to the noCTF monorepo. There's a lot of code here so you must be wondering on how to
 get started.
