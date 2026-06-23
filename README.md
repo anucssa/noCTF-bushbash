@@ -1,4 +1,4 @@
-noCTF - disorientation
+noCTF - BushBash 2026!
 =====
 
 this is a copy of the disorientationctf website for reference cuz the old repo has too many

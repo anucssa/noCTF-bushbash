@@ -132,7 +132,7 @@ export async function routes(fastify: FastifyInstance) {
           team.division_id,
           team.team_id,
         );
-        if (!entry || entry.solves.find(({ challenge_id }) => challenge_id == challenge.chained_after) === undefined) {
+        if (!entry || entry.solves.find(({ challenge_id }) => challenge_id == challenge.chained_after) === null) {
           const chained = await challengeService.get(challenge.chained_after);
           throw new ChainedNotCompleted(`Please solve "${chained.title}" to view this chained challenge.`);
         }

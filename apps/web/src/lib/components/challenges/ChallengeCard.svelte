@@ -66,8 +66,8 @@
 </script>
 
 <button
-  style={((data.hidden || chainedSolved === false) ? "z-index: 1;" : "") + "background-image: url(" + themeToSrc(getTheme(data.categories), data.isSolved) + ");" /* hack to fix tooltips being hidden with opacity-40 */}
-  class={`challenge_card_button ${getTheme(data.categories)} text-left card w-60 h-32 pop ${data.isSolved ? "bg-primary text-primary-content" : "bg-base-100"} rounded-lg shadow-black ${(data.hidden || chainedSolved === false) ? "opacity-40" : ""}`}
+  style={(data.hidden || chainedSolved === false) ? "z-index: 1" : "" /* hack to fix tooltips being hidden with opacity-40 */}
+  class={`text-left card w-60 h-32 pop ${data.isSolved ? "bg-primary text-primary-content" : "bg-base-100"} rounded-lg shadow-black ${(data.hidden || chainedSolved === false) ? "opacity-40" : ""}`}
   onclick={() => onclick(data)}
   disabled={!authState.isAdmin && chainedSolved === false}
 >
@@ -76,7 +76,7 @@
       <div class="card-title line-clamp-1 font-black press-start-2p challenge_card_title">
         {data.title}
       </div>
-      {#if data.chainedAfter !== undefined && data.chainedAfter! > 0}
+      {#if data.chainedAfter !== undefined}
         <div class="tooltip" data-tip={`Chained after "${chainedData?.title ?? "<hidden challenge>"}"`}>
           <Icon class="text-lg" icon="material-symbols:link" />
         </div>
