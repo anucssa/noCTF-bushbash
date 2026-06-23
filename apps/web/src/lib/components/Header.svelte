@@ -52,7 +52,7 @@
         class="btn bg-base-100 pop hover:pop hover:none"
         aria-label="Open menu"
       >
-        <img src="https://disorientation.cssa.club/files/favicon.png" alt="">
+        <img src="https://bushbash.cssa.club/files/favicon.png" alt="">
       </div>
       <ul
         class="menu menu-sm dropdown-content mt-3 z-[10] p-2 pop bg-base-100 rounded-box w-52"
@@ -90,7 +90,7 @@
   <div class="navbar-center justify-center navbar_logo_div">
     {#if !(page.url.pathname === "/")}
     <a href="/" class="text-xl">
-      <img src="https://disorientation.cssa.club/files/logo-web-v3.png" alt="DisorientationCTF" class="navbar_logo">
+      <img src="https://bushbash.cssa.club/files/logo-web-v3.png" alt="BushBashCTF" class="navbar_logo">
       </a>
     {:else}
     <a href="https://cssa.club" class="navbar_cssa"> <!-- the cssa svg lol ik this is kinda stupid -->
@@ -206,6 +206,6 @@
 
   }
 
-  drawbg();
+  // drawbg();
   </script>
 </div>

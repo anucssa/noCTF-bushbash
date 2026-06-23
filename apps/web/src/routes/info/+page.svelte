@@ -40,7 +40,7 @@ Competition!
       Each player must register an individual account <a title="Login Screen" class="link" href="/auth">here</a>.
       Players may then join/form teams <a title="Teams Screen" class="link" href="/team">here</a>.
     </li>
-    <li>The flag format is <code>disorientation{"{yourflaghere}"}</code>.</li>
+    <li>The flag format is <code>{"bushbash{yourflaghere}"}</code>.</li>
     <li>
       Do not attack anything other than the provided infrastructure. In particular, please refrain
       from abusing any services hosted by ANU.
