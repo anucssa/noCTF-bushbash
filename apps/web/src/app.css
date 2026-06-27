@@ -327,14 +327,51 @@ body {
       align-items: center;
 
       .frontpage-button {
-        width: 250px;
+        width: 300px;
         display: flex;
         flex-direction: row;
+        align-items: center;
         color: #121011;
         background: #ECD20B;
         background: linear-gradient(100deg,rgba(236, 210, 11, 1) 0%, rgba(6, 134, 125, 1) 100%);
         font-size: 24px;
         padding: 15px 0px;
+
+        #frontpage-button-cssa-holder {
+          width: 40%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        #frontpage-button-cssa {
+          width: 60px;
+        }
+        p {
+          width: 40%;
+        }
+        #frontpage-button-redirect-holder {
+          width: 33%;
+          display: flex;
+          align-items: center;
+          justify-content: right;
+          padding-right: 7%;
+        }
+        #frontpage-button-redirect {
+          width: 25px;
+        }
+      }
+    }
+  }
+
+  #frontpage-sponsors-div {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    
+    #frontpage-sponsors-title {
+      width: 400px;
+      p {
+        text-align: center;
       }
     }
   }
