@@ -201,9 +201,6 @@
         qq.closePath();
         y += 20;
     }
-
-    
-
   }
 
   // drawbg();
