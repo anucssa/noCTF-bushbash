@@ -2,7 +2,7 @@
   // import configState from "$lib/state/config.svelte";
 </script>
 
-<div class="h-80 flex justify-center items-end home_div">
+<div class="h-80 flex justify-center items-end home_div press-start-2p">
   <div class="text-8xl font-mono font-extrabold" id="frontpage-logo-div">
     <img id="frontpage-logo" src="https://u.cubeupload.com/oreophone/logo.png" alt="Welcome to BushBashCTF"/>
   </div>
