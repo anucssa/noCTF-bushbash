@@ -177,9 +177,6 @@ body {
   #frontpage-logo {
     filter: drop-shadow(8px 8px 0px rgba(18,16,17,0.8));
   }
-  #frontpage-events {
-    filter: drop-shadow(8px 8px 0px rgba(1,76,46,0.8));
-  }
 
   .frontpage-startend {
     h3 {
@@ -195,10 +192,17 @@ body {
     }
   }
 
-  #frontpage-subtitle-div {
+  .frontpage-button {
+    border-radius: 7px;
+  }
+
+  .frontpage-section {
+    width: 70vw;
     display: flex;
     flex-direction: row;
-    width: 70vw;
+  }
+
+  #frontpage-subtitle-div {
 
     #frontpage-subtitle-left {
       width: 70%;
@@ -252,9 +256,6 @@ body {
   }
 
   #frontpage-info-div {
-    width: 70vw;
-    display: flex;
-    flex-direction: row;
     font-size: 24px;
 
     #frontpage-info-left {
@@ -276,6 +277,64 @@ body {
         filter: drop-shadow(8px 8px 0px rgba(53,39,1,0.8));
         width: 18vw;
         transform: rotate(3deg);
+      }
+    }
+  }
+
+  #frontpage-buttons {
+    justify-content: space-evenly;
+
+    .frontpage-button {
+      width: 25%;
+      font-size: 24px;
+      padding: 15px 0px;
+    }
+    #frontpage-button-teamup {
+      color: #121011;
+      background: rgba(138, 206, 22, 1);
+      box-shadow: 8px 8px 0px rgba(37, 110, 3, 0.5);
+    }
+    #frontpage-button-challenges {
+      color: #121011;
+      background: rgba(236, 210, 11, 1);
+      box-shadow: 8px 8px 0px rgba(49, 40, 0, 0.5);
+    }
+    #frontpage-button-rulesinfo {
+      background: rgba(38, 0, 49, 1);
+      box-shadow: 8px 8px 0px rgba(54,47,41,0.5);
+    }
+  }
+
+  #frontpage-events-sign-div {
+    padding-left: 12vw;
+    #frontpage-events {
+      filter: drop-shadow(8px 8px 0px rgba(1,76,46,0.8));
+      width: 20vw;
+      transform: rotate(5deg);
+    }
+  }
+
+  #frontpage-events-div {
+    #frontpage-events-left {
+      width: 50%;
+      font-size: 24px;
+      line-height: 1.2;
+    }
+    #frontpage-events-right {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .frontpage-button {
+        width: 250px;
+        display: flex;
+        flex-direction: row;
+        color: #121011;
+        background: #ECD20B;
+        background: linear-gradient(100deg,rgba(236, 210, 11, 1) 0%, rgba(6, 134, 125, 1) 100%);
+        font-size: 24px;
+        padding: 15px 0px;
       }
     }
   }
@@ -340,6 +399,8 @@ ul li {
 ol li {
   list-style-type: decimal;
 }
+
+/* who even plays ctfs on mobile */
 
 @media screen and (max-width: 1000px) {
   .home_div {

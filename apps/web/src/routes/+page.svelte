@@ -7,7 +7,7 @@
     <img id="frontpage-logo" src="https://u.cubeupload.com/oreophone/logo.png" alt="Welcome to BushBashCTF"/>
   </div>
 
-  <div class="text-2xl font-mono" id="frontpage-subtitle-div">
+  <div class="text-2xl font-mono frontpage-section" id="frontpage-subtitle-div">
     <div id="frontpage-subtitle-left">
       <p id="frontpage-subtitle">
         The second student-led CTF of the ANU!
@@ -31,7 +31,7 @@
     </div>
   </div>
 
-  <div id="frontpage-info-div">
+  <div class="frontpage-section" id="frontpage-info-div">
     <div id="frontpage-info-left">
       <p>
         Welcome to BushBashCTF 2026, the second CTF of the 
@@ -48,17 +48,17 @@
     </div>
   </div>
 
-  <div id="frontpage-buttons">
+  <div class="frontpage-section" id="frontpage-buttons">
     <button class="frontpage-button" id="frontpage-button-teamup">Team Up</button>
     <button class="frontpage-button" id="frontpage-button-challenges">Challenges</button>
     <button class="frontpage-button" id="frontpage-button-rulesinfo">Rules+Info</button>
   </div>
 
-  <div id="frontpage-events-sign-div">
+  <div class="frontpage-section" id="frontpage-events-sign-div">
     <img id="frontpage-events" src="https://u.cubeupload.com/oreophone/eventsign.png" alt="Events">
   </div>
 
-  <div id="frontpage-events-div">
+  <div class="frontpage-section" id="frontpage-events-div">
     <div id="frontpage-events-left">
       <p>
         From ANU? We're hosting a ton of Comp-Sci events for Bush Week!
@@ -79,7 +79,7 @@
     </div>
   </div>
 
-  <div id="frontpage-sponsors-div">
+  <div class="frontpage-section" id="frontpage-sponsors-div">
     <div class="frontpage-startend" id="frontpage-sponsors-title">
       <p>Sponsors</p>
     </div>
