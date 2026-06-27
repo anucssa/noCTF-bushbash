@@ -17,7 +17,7 @@
           <h3>Start</h3>
           <p>31 Jul 5pm</p>
         </div>
-        <div class="frontpage-startend" id="frontpage-start">
+        <div class="frontpage-startend" id="frontpage-end">
           <h3>Start</h3>
           <p>31 Jul 5pm</p>
         </div>
