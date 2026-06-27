@@ -166,6 +166,16 @@ body {
     width: 55vw;
   }
 
+  #frontpage-logo {
+    filter: drop-shadow(8px 8px 0px rgba(18,16,17,0.8));
+  }
+  #frontpage-join {
+    filter: drop-shadow(8px 8px 0px rgba(53,39,1,0.8));
+  }
+  #frontpage-events {
+    filter: drop-shadow(8px 8px 0px rgba(1,76,46,0.8));
+  }
+
   .frontpage-startend {
     h3 {
       font-size: 12px;

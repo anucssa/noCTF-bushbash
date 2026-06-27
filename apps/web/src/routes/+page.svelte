@@ -55,7 +55,7 @@
   </div>
 
   <div id="frontpage-events-sign-div">
-    <img src="https://u.cubeupload.com/oreophone/eventsign.png" alt="Events">
+    <img id="frontpage-events" src="https://u.cubeupload.com/oreophone/eventsign.png" alt="Events">
   </div>
 
   <div id="frontpage-events-div">
