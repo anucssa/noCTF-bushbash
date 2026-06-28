@@ -2,6 +2,14 @@
   // import configState from "$lib/state/config.svelte";
 </script>
 
+<div id="frontpage-pipes-holder">
+  <svg height="2222" viewBox="0 0 514 3000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect id="pipeleft" x="-80" width="20" height="3000" fill="#060320"/>
+  <rect id="piperight" x="574" width="20" height="3000" fill="#060320"/>
+  <rect id="pipemid" x="250" width="20" height="286" fill="#060320"/>
+  </svg>
+</div>
+
 <div id="frontpage" class="h-80 flex justify-center items-end home_div press-start-2p">
   <div class="text-8xl font-mono font-extrabold" id="frontpage-logo-div">
     <img id="frontpage-logo" src="https://u.cubeupload.com/oreophone/logo.png" alt="Welcome to BushBashCTF"/>
@@ -89,33 +97,64 @@
     </div>
   </div>
 
-  <div class="frontpage-section" id="frontpage-sponsors-div">
-    <div class="frontpage-startend" id="frontpage-sponsors-title">
-      <p>CSSA Sponsors</p>
-    </div>
-    <!-- TODO link all sponsors -->
-    <div class="frontpage-sponsors-row">
-      <img class="sponsor-logo" id="sponsor-janestreet" src="https://u.cubeupload.com/oreophone/bbjanestreet.png" alt="Jane Street - Partner"/>
-      <img class="sponsor-logo" id="sponsor-imc" src="https://u.cubeupload.com/oreophone/bbimc.png" alt="IMC - Major Sponsor"/>
-    </div>
-    <div class="frontpage-sponsors-row">
-      <img class="sponsor-logo" src="https://u.cubeupload.com/oreophone/bbcitadel.png" alt="Citadel - Digital Sponsor"/>
-      <img class="sponsor-logo" src="https://u.cubeupload.com/oreophone/bbatlassian.png" alt="Atlassian - Digital Sponsor"/>
-      <img class="sponsor-logo" src="https://u.cubeupload.com/oreophone/bboptiver.png" alt="Optiver - Networking Sponsor"/>
-    </div>
-    <div class="frontpage-sponsors-row">
-      <img class="sponsor-logo" src="https://u.cubeupload.com/oreophone/bbinfosect.png" alt="Citadel - Networking Sponsor"/>
-      <img class="sponsor-logo" src="https://u.cubeupload.com/oreophone/263bbbsides.png" alt="BSides - Digital Sponsor"/>
-      <img class="sponsor-logo" src="https://u.cubeupload.com/oreophone/bbtantosec.png" alt="TantoSec - Digital Sponsor"/>
-      <img class="sponsor-logo" src="https://u.cubeupload.com/oreophone/bbnttdata.png" alt="NTT Data - Networking Sponsor"/>
-    </div>
+  <div id="frontpage-sponsor-border">
+    <svg width="3000" height="402" viewBox="0 0 3000 402" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <mask id="mask0_166_3" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="3000" height="402">
+    <rect width="3000" height="401.25" fill="#D9D9D9"/>
+    </mask>
+    <g mask="url(#mask0_166_3)">
+    <ellipse cx="1473.75" cy="762.187" rx="2724.38" ry="720.937" fill="#060320"/>
+    </g>
+    </svg>
   </div>
 
-  <div class="frontpage-section" id="frontpage-bottom-div">
-    <a href="https://cssa.club" title="made by the ANU CSSA">
-      <img id="frontpage-cssafull" src="https://u.cubeupload.com/oreophone/bbcssafull.png" alt="ANU Computer Science Students' Association"/>
-    </a>
-    <a href="#top" title="Website by oreophone :3">back to top ^</a>
+  <div id="frontpage-bottom-holder">
+    <div class="frontpage-section" id="frontpage-sponsors-div">
+      <div class="frontpage-startend" id="frontpage-sponsors-title">
+        <p>CSSA Sponsors</p>
+      </div>
+      <!-- TODO link all sponsors -->
+      <div class="frontpage-sponsors-row">
+        <a href="https://janestreet.com" title="Jane Street - Partner">
+          <img class="sponsor-logo" id="sponsor-janestreet" src="https://u.cubeupload.com/oreophone/bbjanestreet.png" alt="Jane Street - Partner"/>
+        </a>
+        <a href="https://imc.com" title="Jane Street - Major Sponsor">
+          <img class="sponsor-logo" id="sponsor-imc" src="https://u.cubeupload.com/oreophone/bbimc.png" alt="IMC - Major Sponsor"/>
+        </a>
+      </div>
+      <div class="frontpage-sponsors-row">
+        <a href="https://citadel.com" title="Citadel - Digital Sponsor">
+          <img class="sponsor-logo" src="https://u.cubeupload.com/oreophone/bbcitadel.png" alt="Citadel - Digital Sponsor"/>
+        </a>
+        <a href="https://atlassian.com" title="Atlassian - Digital Sponsor">
+          <img class="sponsor-logo" src="https://u.cubeupload.com/oreophone/bbatlassian.png" alt="Atlassian - Digital Sponsor"/>
+        </a>
+        <a href="https://optiver.com" title="Optiver - Networking Sponsor">
+          <img class="sponsor-logo" src="https://u.cubeupload.com/oreophone/bboptiver.png" alt="Optiver - Networking Sponsor"/>
+        </a>
+      </div>
+      <div class="frontpage-sponsors-row">
+        <a href="https://infosectcbr.com.au" title="Infosect - Networking Sponsor">
+          <img class="sponsor-logo" src="https://u.cubeupload.com/oreophone/bbinfosect.png" alt="Citadel - Networking Sponsor"/>
+        </a>
+        <a href="https://bsidesau.com.au" title="BSides - Digital Sponsor">
+          <img class="sponsor-logo" src="https://u.cubeupload.com/oreophone/263bbbsides.png" alt="BSides - Digital Sponsor"/>
+        </a>
+        <a href="https://tantosec.com" title="TantoSec - Digital Sponsor">
+          <img class="sponsor-logo" src="https://u.cubeupload.com/oreophone/bbtantosec.png" alt="TantoSec - Digital Sponsor"/>
+        </a>
+        <a href="https://nttdata.com" title="NTT Data - Networking Sponsor">
+          <img class="sponsor-logo" src="https://u.cubeupload.com/oreophone/bbnttdata.png" alt="NTT Data - Networking Sponsor"/>
+        </a>
+      </div>
+    </div>
+
+    <div class="frontpage-section" id="frontpage-bottom-div">
+      <a href="https://cssa.club" title="made by the ANU CSSA">
+        <img id="frontpage-cssafull" src="https://u.cubeupload.com/oreophone/bbcssafull.png" alt="ANU Computer Science Students' Association"/>
+      </a>
+      <a href="#top" title="Website by oreophone :3">back to top ^</a>
+    </div>
   </div>
 
 </div>
