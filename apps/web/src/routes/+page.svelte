@@ -2,7 +2,7 @@
   // import configState from "$lib/state/config.svelte";
 </script>
 
-<div class="h-80 flex justify-center items-end home_div press-start-2p">
+<div id="frontpage" class="h-80 flex justify-center items-end home_div press-start-2p">
   <div class="text-8xl font-mono font-extrabold" id="frontpage-logo-div">
     <img id="frontpage-logo" src="https://u.cubeupload.com/oreophone/logo.png" alt="Welcome to BushBashCTF"/>
   </div>
@@ -93,15 +93,29 @@
     <div class="frontpage-startend" id="frontpage-sponsors-title">
       <p>CSSA Sponsors</p>
     </div>
+    <!-- TODO link all sponsors -->
     <div class="frontpage-sponsors-row">
-      Sponsors - row 1
+      <img class="sponsor-logo" id="sponsor-janestreet" src="https://u.cubeupload.com/oreophone/bbjanestreet.png" alt="Jane Street - Partner"/>
+      <img class="sponsor-logo" id="sponsor-imc" src="https://u.cubeupload.com/oreophone/bbimc.png" alt="IMC - Major Sponsor"/>
     </div>
     <div class="frontpage-sponsors-row">
-      Sponsors - row 2
+      <img class="sponsor-logo" src="https://u.cubeupload.com/oreophone/bbcitadel.png" alt="Citadel - Digital Sponsor"/>
+      <img class="sponsor-logo" src="https://u.cubeupload.com/oreophone/bbatlassian.png" alt="Atlassian - Digital Sponsor"/>
+      <img class="sponsor-logo" src="https://u.cubeupload.com/oreophone/bboptiver.png" alt="Optiver - Networking Sponsor"/>
     </div>
     <div class="frontpage-sponsors-row">
-      Sponsors - row 3
+      <img class="sponsor-logo" src="https://u.cubeupload.com/oreophone/bbinfosect.png" alt="Citadel - Networking Sponsor"/>
+      <img class="sponsor-logo" src="https://u.cubeupload.com/oreophone/263bbbsides.png" alt="BSides - Digital Sponsor"/>
+      <img class="sponsor-logo" src="https://u.cubeupload.com/oreophone/bbtantosec.png" alt="TantoSec - Digital Sponsor"/>
+      <img class="sponsor-logo" src="https://u.cubeupload.com/oreophone/bbnttdata.png" alt="NTT Data - Networking Sponsor"/>
     </div>
+  </div>
+
+  <div class="frontpage-section" id="frontpage-bottom-div">
+    <a href="https://cssa.club" title="made by the ANU CSSA">
+      <img id="frontpage-cssafull" src="https://u.cubeupload.com/oreophone/bbcssafull.png" alt="ANU Computer Science Students' Association"/>
+    </a>
+    <a href="#top" title="Website by oreophone :3">back to top ^</a>
   </div>
 
 </div>
