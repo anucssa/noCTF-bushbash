@@ -27,7 +27,7 @@
         </div>
         <div class="frontpage-startend" id="frontpage-end">
           <h3>Start</h3>
-          <p>31 Jul 5pm</p>
+          <p>02 Aug 5pm</p>
         </div>
       </div>
     </div>
@@ -57,9 +57,9 @@
   </div>
 
   <div class="frontpage-section" id="frontpage-buttons">
-    <button class="frontpage-button" id="frontpage-button-teamup">Team Up</button>
-    <button class="frontpage-button" id="frontpage-button-challenges">Challenges</button>
-    <button class="frontpage-button" id="frontpage-button-rulesinfo">Rules+Info</button>
+    <a href="team" class="frontpage-button" id="frontpage-button-teamup">Team Up</a>
+    <a href="challenges" class="frontpage-button" id="frontpage-button-challenges">Challenges</a>
+    <a href="info" class="frontpage-button" id="frontpage-button-rulesinfo">Rules+Info</a>
   </div>
 
   <div class="frontpage-section" id="frontpage-events-sign-div">
@@ -79,7 +79,7 @@
       </ul>
     </div>
     <div id="frontpage-events-right">
-      <button class="frontpage-button">
+      <a class="frontpage-button" href="https://linktr.ee/anucssa">
         <!-- im sorry -->
         <div id="frontpage-button-cssa-holder">
           <svg id="frontpage-button-cssa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150">
@@ -93,7 +93,7 @@
         <div id="frontpage-button-redirect-holder">
         <svg id="frontpage-button-redirect" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free v7.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0-201.4 201.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3 448 192c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 96C35.8 96 0 131.8 0 176L0 432c0 44.2 35.8 80 80 80l256 0c44.2 0 80-35.8 80-80l0-80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 80c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l80 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 96z"/></svg>
         </div>
-      </button>
+      </a>
     </div>
   </div>
 
@@ -113,7 +113,6 @@
       <div class="frontpage-startend" id="frontpage-sponsors-title">
         <p>CSSA Sponsors</p>
       </div>
-      <!-- TODO link all sponsors -->
       <div class="frontpage-sponsors-row">
         <a href="https://janestreet.com" title="Jane Street - Partner">
           <img class="sponsor-logo" id="sponsor-janestreet" src="https://u.cubeupload.com/oreophone/bbjanestreet.png" alt="Jane Street - Partner"/>
