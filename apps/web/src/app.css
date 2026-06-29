@@ -593,6 +593,13 @@ ol li {
       }
     }
 
+    #frontpage-events-div {
+      width: 80%;
+      #frontpage-events-left {
+        width: 100%;
+      }
+    }
+
   }
 }
 
