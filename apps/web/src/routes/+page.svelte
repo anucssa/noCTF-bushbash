@@ -26,7 +26,7 @@
           <p>31 Jul 5pm</p>
         </div>
         <div class="frontpage-startend" id="frontpage-end">
-          <h3>Start</h3>
+          <h3>End</h3>
           <p>02 Aug 5pm</p>
         </div>
       </div>
