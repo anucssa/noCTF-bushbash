@@ -136,7 +136,7 @@ body {
 }
 
 .navbar_logo {
-  min-width: 200px;
+  min-width: 150px;
 }
 #navbar-bushbash {
   width: 30vw;
@@ -144,7 +144,7 @@ body {
 } 
 #navbar-cssasign {
   width: 40vw;
-  min-width: 350px;
+  min-width: 200px;
   filter: drop-shadow(8px 8px 0px rgba(1,76,46,0.8));
 }
 
@@ -206,7 +206,7 @@ body {
 
   #frontpage-logo {
     filter: drop-shadow(8px 8px 0px rgba(18,16,17,0.8));
-    min-width: 400px;
+    min-width: 300px;
   }
 
   .frontpage-startend {
@@ -523,11 +523,34 @@ ol li {
 
 /* who even plays ctfs on mobile */
 
+@media screen and (max-width: 1400px) {
+  :root {
+    --font-size-small: 12px;
+    --font-size-med: 18px;
+    --font-size-large: 30px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   :root {
     --font-size-small: 12px;
     --font-size-med: 16px;
-    --font-size-large: 30px;
+    --font-size-large: 20px;
+  }
+
+  .navbar_logo_div {
+    width: 0px;
+  }
+
+  #frontpage-pipes-holder {
+    top: calc(30px - 2vw);
+  }
+
+  #navbar-cssasign {
+    position: relative;
+    min-width: calc(50vw + 20px);
+    top: calc(110px - 9vw);
+    filter: drop-shadow(8px 8px 0px rgba(1,76,46,0.8));
   }
 
   .home_div {
@@ -598,15 +621,19 @@ ol li {
       #frontpage-events-left {
         width: 100%;
       }
+      #frontpage-events-right {
+        width: 100%;
+        .frontpage-button {
+          width: 250px;
+        }
+      }
     }
 
-  }
-}
+    #frontpage-sponsors-div {
+      #frontpage-sponsors-title {
+        width: 300px;
+      }
+    }
 
-@media screen and (max-width: 1400px) {
-  :root {
-    --font-size-small: 12px;
-    --font-size-med: 18px;
-    --font-size-large: 30px;
   }
 }
