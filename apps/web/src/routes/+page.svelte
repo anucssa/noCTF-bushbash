@@ -6,7 +6,7 @@
   <svg height="2222" viewBox="0 0 514 3000" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect id="pipeleft" x="-80" width="20" height="3000" fill="#060320"/>
   <rect id="piperight" x="574" width="20" height="3000" fill="#060320"/>
-  <rect id="pipemid" x="250" width="20" height="286" fill="#060320"/>
+  <rect id="pipemid" x="250" width="20" height="200" fill="#060320"/>
   </svg>
 </div>
 
