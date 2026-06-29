@@ -163,6 +163,12 @@ body {
 
 /* Home Screen */
 
+:root {
+  --font-size-small: 12px;
+  --font-size-med: 24px;
+  --font-size-big: 30px;
+}
+
 #frontpage-pipes-holder {
   position: relative;
   width: 100vw;
@@ -205,12 +211,12 @@ body {
 
   .frontpage-startend {
     h3 {
-      font-size: 12px;
+      font-size: var(--font-size-small);
       text-align: center;
     }
     p {
       padding: 15px 40px;
-      font-size: 24px;
+      font-size: var(--font-size-med);
       color: #121011;
       background: rgba(236, 210, 11, 0.9);
       box-shadow: 8px 8px 0px rgba(49, 40, 0, 0.5);
@@ -236,7 +242,7 @@ body {
 
       #frontpage-subtitle {
         padding: 10px;
-        font-size: 30px;
+        font-size: var(--font-size-large);
       }
 
       #frontpage-startend-div {
@@ -271,7 +277,7 @@ body {
       display: flex;
       flex-direction: column;
       h3 {
-        font-size: 12px;
+        font-size: var(--font-size-small);
         text-align: center;
       }
       #frontpage-subtitle-sponsor-div {
@@ -283,7 +289,7 @@ body {
   }
 
   #frontpage-info-div {
-    font-size: 24px;
+    font-size: var(--font-size-med);
 
     #frontpage-info-left {
       line-height: 1.2;
@@ -313,7 +319,7 @@ body {
 
     .frontpage-button {
       width: 25%;
-      font-size: 24px;
+      font-size: var(--font-size-med);
       padding: 15px 0px;
       text-align: center;
     }
@@ -346,7 +352,7 @@ body {
     margin-bottom: 75px;
     #frontpage-events-left {
       width: 50%;
-      font-size: 24px;
+      font-size: var(--font-size-med);
       line-height: 1.2;
     }
     #frontpage-events-right {
@@ -364,7 +370,7 @@ body {
         background: #ECD20B;
         background: linear-gradient(100deg,rgba(236, 210, 11, 1) 0%, rgba(6, 134, 125, 1) 100%);
         box-shadow: 8px 8px 0px rgba(54, 47, 51, 1);
-        font-size: 24px;
+        font-size: var(--font-size-med);
         padding: 15px 0px;
 
         #frontpage-button-cssa-holder {
@@ -431,14 +437,17 @@ body {
 
     .frontpage-sponsors-row {
       width: 100%;
-      height: 123px;
+      height: 8vw;
+      max-height: 110px;
+
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
 
       a img {
           width: auto;
-          height: 123px;
+          height: 8vw;
+          max-height: 110px;
           object-fit: contain;
       }
     }
@@ -514,46 +523,83 @@ ol li {
 
 /* who even plays ctfs on mobile */
 
-@media screen and (max-width: 1000px) {
-  .home_div {
-    .home_info_div {
-      flex-direction: column;
-      gap: 20px;
-      height: 50vh;
-      .home_info_div_left {
-        width: 60vw;
-      }
-
-      .home_button_div {
-        width: 60vw;
-      }
-    }
-    .sponsors_div {
-      width: 250px;
-      img {
-        width: 200px;
-      }
-    }
-    .sponsors2_div {
-      img {
-        aspect-ratio: auto;
-        height: 75px;
-      }
-      div {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
+@media screen and (max-width: 1200px) {
+  :root {
+    --font-size-small: 12px;
+    --font-size-med: 16px;
+    --font-size-large: 30px;
   }
 
-  #start_end_holder {
-    font-size: 14px;
+  .home_div {
+    .frontpage-section {
+      flex-direction: column;
+      align-items: center;
+      width: 90vw;
+      gap: 20px;
+    }
+
+    #frontpage-subtitle-div {
+        #frontpage-subtitle-left { 
+          width: 80%;
+          align-items: center;
+
+          #frontpage-startend-div {
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+
+            .frontpage-startend {
+              width: 300px;
+            }
+        }
+      }
+    }
+
+    #frontpage-info-div {
+      width: 80%;
+
+      #frontpage-info-left {
+        width: 100%;
+      }
+      #frontpage-info-right {
+        padding-left: 0px;
+        padding-top: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        #frontpage-join {
+          filter: drop-shadow(8px 8px 0px rgba(53,39,1,0.8));
+          width: 200px;
+          transform: rotate(0deg);
+        }
+      }
+    }
+
+    #frontpage-buttons {
+      .frontpage-button {
+        width: 300px;
+      }
+    }
+
+    #frontpage-events-sign-div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      #frontpage-events {
+        width: 300px;
+        transform: none;
+      }
+    }
+
   }
 }
 
-@media screen and (max-width: 1200px) {
-  .home_button_div a {
-    font-size: 15px;
-    
+@media screen and (max-width: 1400px) {
+  :root {
+    --font-size-small: 12px;
+    --font-size-med: 18px;
+    --font-size-large: 30px;
   }
 }
