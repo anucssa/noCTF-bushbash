@@ -8,11 +8,11 @@
   <script src="https://kit.fontawesome.com/8ac6ea753d.js" crossorigin="anonymous"></script>
   <div id="info_div">
   <h2 class="text-4xl"><strong>
-    The ANU's First O-Week Capture the Flag
-Competition!
+    in construction...
 </strong>
   </h2>
   <br>
+  <!--
   <ul class="text-xl">
     <li>Beginner-friendly Computer Security challenges</li>
     <li>Teams of up to <strong>6</strong> players</li>
@@ -150,5 +150,6 @@ Competition!
   <br>
   Note that any clarifications/challenge updates will be announced publicly on this website.
   Announcements may be viewed on the <a class="link" title="Challenge Screen" href="/challenges">Challenges</a> screen.
+    -->
   </div>
 </div>
