@@ -52,7 +52,7 @@
         class="btn bg-base-100 pop hover:pop hover:none"
         aria-label="Open menu"
       >
-        <img src="https://bushbash.cssa.club/files/favicon.png" alt="">
+        <img src="https://u.cubeupload.com/oreophone/compass.png" alt="">
       </div>
       <ul
         class="menu menu-sm dropdown-content mt-3 z-[10] p-2 pop bg-base-100 rounded-box w-52"
