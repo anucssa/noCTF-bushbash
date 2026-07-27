@@ -7,26 +7,24 @@
 <div class="h-80 flex justify-center items-end home_div" id="info_div_container">
   <script src="https://kit.fontawesome.com/8ac6ea753d.js" crossorigin="anonymous"></script>
   <div id="info_div">
-  <h2 class="text-4xl"><strong>
-    in construction...
-</strong>
-  </h2>
   <br>
-  <!--
   <ul class="text-xl">
-    <li>Beginner-friendly Computer Security challenges</li>
+    <li>Beginner-friendly and intense Computer Security challenges</li>
     <li>Teams of up to <strong>6</strong> players</li>
-    <li><strong>$1000</strong> total prize value for top 3 teams</li>
+    <li><strong>$1000</strong> total prize value across top teams</li>
   </ul>
+  <br>
+  From ANU? Come along to our 
+  <strong><a href="https://events.humanitix.com/bushbash-ctf-cssa-bush-week-tech-fest" title="register on Humanitix!" class="link">in-person CTF sessions!</a></strong>
 <br>
   <div id="start_end_holder" class="flex press-start-2p">
-    <div id="start_holder">
-      <span id="start_title" class="time_title">Start</span><br>
-      <span id="start_duration" class="time_duration">18 Feb 2pm</span>
+    <div class="frontpage-startend" id="frontpage-start">
+      <h3>Start</h3>
+      <p>31 Jul 5pm</p>
     </div>
-    <div id="end_holder">
-      <span id="end_title" class="time_title">End</span><br>
-      <span id="end_duration" class="time_duration">22 Feb 2pm</span>
+    <div class="frontpage-startend" id="frontpage-end">
+      <h3>End</h3>
+      <p>02 Aug 5pm</p>
     </div>
   </div>
 <br>
@@ -62,11 +60,18 @@
   </strong></h2><br>
   The following prizes are offered to the top teams in the <strong>ANU Division</strong>:<br><br>
   <strong>1st, 2nd, 3rd:</strong> <a href="https://www.bsidesau.com.au" target="_blank"  rel="noopener noreferrer" class="link">B-Sides Tickets</a> for all members!<br>
-+ Exclusive <a href="https://tantosec.com" target="_blank"  rel="noopener noreferrer" class="link">TantoSec</a> goods, Rubiks Cubes, and CSSA hoodies!
++ (semi)-official ANU certificates, CSS and ANU Cyber Sense Merch, and more!
+
+  <br>
+  <br>
+  <br>
+  <br>
+    ... + a bonus gift for our ANU participants... :3
   <br>
   <br>
     <hr>
   <br>
+  <!--
   <h2 class="text-4xl"><strong>
     Credits
   </strong></h2><br>

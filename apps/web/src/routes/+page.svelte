@@ -72,7 +72,7 @@
   <div class="frontpage-section" id="frontpage-events-div">
     <div id="frontpage-events-left">
       <p>
-        From ANU? We're hosting a ton of Comp-Sci events for Bush Week!
+        From ANU? Come along to our Bush Week Tech Fest running this weekend!
       </p>
       <ul>
         <li>Cyber Talks</li>
@@ -82,7 +82,7 @@
       </ul>
     </div>
     <div id="frontpage-events-right">
-      <a class="frontpage-button" href="https://linktr.ee/anucssa">
+      <a class="frontpage-button" href="https://techfest.cssa.club">
         <!-- im sorry -->
         <div id="frontpage-button-cssa-holder">
           <svg id="frontpage-button-cssa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150">
