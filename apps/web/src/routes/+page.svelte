@@ -51,7 +51,7 @@
       <ul>
         <li>Teams of up to 6 players</li>
         <li>Beginner-friendly + intense challenges</li>
-        <li>$1000+ prize pool!</li>
+        <li>$3000+ prize pool!</li>
       </ul>
     </div>
     <div id="frontpage-info-right">

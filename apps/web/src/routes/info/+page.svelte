@@ -11,7 +11,7 @@
   <ul class="text-xl">
     <li>Beginner-friendly and intense Computer Security challenges</li>
     <li>Teams of up to <strong>6</strong> players</li>
-    <li><strong>$1000</strong> total prize value across top teams</li>
+    <li><strong>$3000</strong> total prize value across top teams</li>
   </ul>
   <br>
   From ANU? Come along to our 
@@ -58,8 +58,9 @@
   <h2 class="text-4xl"><strong>
     Prizes
   </strong></h2><br>
-  The following prizes are offered to the top teams in the <strong>ANU Division</strong>:<br><br>
-  <strong>1st, 2nd, 3rd:</strong> <a href="https://www.bsidesau.com.au" target="_blank"  rel="noopener noreferrer" class="link">B-Sides Tickets</a> for all members!<br>
+  The following prizes are offered to the top teams in <strong>both divisions</strong>:<br><br>
+  <strong>1st, 2nd, 3rd:</strong> 6 months Claude Pro for all members!<br>
+  <strong>Top ANU Team:</strong> <a href="https://www.bsidesau.com.au" target="_blank"  rel="noopener noreferrer" class="link">B-Sides tickets</a> for all members
 + (semi)-official ANU certificates, CSS and ANU Cyber Sense Merch, and more!
 
   <br>
