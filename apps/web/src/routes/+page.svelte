@@ -32,9 +32,12 @@
       </div>
     </div>
     <div id="frontpage-subtitle-right">
-      <h3>Sponsored by</h3>
+      <h3>Supported by</h3>
       <div id="frontpage-subtitle-sponsor-div">
-        TODO
+        <a href="https://systems.anu.edu.au/" title="ANU College of Systems and Society">
+        <img src="https://u.cubeupload.com/oreophone/anulogo.png" alt="ANU">
+        </a>
+        <p>ANU College of Systems and Society</p>
       </div>
     </div>
   </div>
