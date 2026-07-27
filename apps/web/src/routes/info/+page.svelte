@@ -18,11 +18,11 @@
   <strong><a href="https://events.humanitix.com/bushbash-ctf-cssa-bush-week-tech-fest" title="register on Humanitix!" class="link">in-person CTF sessions!</a></strong>
 <br>
   <div id="start_end_holder" class="flex press-start-2p">
-    <div class="frontpage-startend" id="frontpage-start">
+    <div class="frontpage-startend" id="frontpage-start" title="AEST (UTC+10)">
       <h3>Start</h3>
       <p>31 Jul 5pm</p>
     </div>
-    <div class="frontpage-startend" id="frontpage-end">
+    <div class="frontpage-startend" id="frontpage-end" title="AEST (UTC+10)">
       <h3>End</h3>
       <p>02 Aug 5pm</p>
     </div>

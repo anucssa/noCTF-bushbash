@@ -21,11 +21,11 @@
         The second student-led CTF of the ANU!
       </p>
       <div id="frontpage-startend-div">
-        <div class="frontpage-startend" id="frontpage-start">
+        <div class="frontpage-startend" id="frontpage-start" title="AEST (UTC+10)">
           <h3>Start</h3>
           <p>31 Jul 5pm</p>
         </div>
-        <div class="frontpage-startend" id="frontpage-end">
+        <div class="frontpage-startend" id="frontpage-end" title="AEST (UTC+10)">
           <h3>End</h3>
           <p>02 Aug 5pm</p>
         </div>
@@ -72,7 +72,7 @@
   <div class="frontpage-section" id="frontpage-events-div">
     <div id="frontpage-events-left">
       <p>
-        From ANU? Come along to our Bush Week Tech Fest running this weekend!
+        In Canberra, or looking to join us in-person at ANU? Come along to our Bush Week Tech Fest running this weekend!
       </p>
       <ul>
         <li>Cyber Talks</li>
