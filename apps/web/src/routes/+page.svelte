@@ -49,9 +49,9 @@
         ANU CSSA!
       </p>
       <ul>
-        <li>Teams of up to n players</li>
+        <li>Teams of up to 6 players</li>
         <li>Beginner-friendly + intense challenges</li>
-        <li>$xxx prize pool!</li>
+        <li>$1000+ prize pool!</li>
       </ul>
     </div>
     <div id="frontpage-info-right">
