@@ -5,3 +5,4 @@ core/api-client/src/schema.d.ts
 /apps/server/swagger.json
 venv/
 __pycache__/
+.DS_Store

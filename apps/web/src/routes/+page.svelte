@@ -32,9 +32,12 @@
       </div>
     </div>
     <div id="frontpage-subtitle-right">
-      <h3>Sponsored by</h3>
+      <h3>Supported by</h3>
       <div id="frontpage-subtitle-sponsor-div">
-        TODO
+        <a href="https://systems.anu.edu.au/" title="ANU College of Systems and Society">
+        <img src="https://u.cubeupload.com/oreophone/anulogo.png" alt="ANU">
+        </a>
+        <p>ANU College of Systems and Society</p>
       </div>
     </div>
   </div>
@@ -46,9 +49,9 @@
         ANU CSSA!
       </p>
       <ul>
-        <li>Teams of up to n players</li>
+        <li>Teams of up to 6 players</li>
         <li>Beginner-friendly + intense challenges</li>
-        <li>$xxx prize pool!</li>
+        <li>$3000+ prize pool!</li>
       </ul>
     </div>
     <div id="frontpage-info-right">
@@ -69,7 +72,7 @@
   <div class="frontpage-section" id="frontpage-events-div">
     <div id="frontpage-events-left">
       <p>
-        From ANU? We're hosting a ton of Comp-Sci events for Bush Week!
+        From ANU? Come along to our Bush Week Tech Fest running this weekend!
       </p>
       <ul>
         <li>Cyber Talks</li>
@@ -79,7 +82,7 @@
       </ul>
     </div>
     <div id="frontpage-events-right">
-      <a class="frontpage-button" href="https://linktr.ee/anucssa">
+      <a class="frontpage-button" href="https://techfest.cssa.club">
         <!-- im sorry -->
         <div id="frontpage-button-cssa-holder">
           <svg id="frontpage-button-cssa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150">

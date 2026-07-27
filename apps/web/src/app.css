@@ -282,8 +282,19 @@ body {
       }
       #frontpage-subtitle-sponsor-div {
         /* TODO */
-        background: rgba(120,120,120,0.4);
         height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        a img {
+          height: 100px;
+          width: auto;
+        }
+        p {
+          font-size: var(--font-size-small);
+          text-align: center;
+          line-height: var(--font-size-med);
+        }
       }
     }
   }
@@ -479,33 +490,23 @@ body {
   gap: 10vw;
   font-size: 20px;
 
-  div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-
-    .time_duration {
-      padding: 11px;
-      color: #000000;
-      box-shadow: 11px 11px 0px #1b171d;
+  #frontpage-start {
+    h3 {
+      color: rgba(138, 206, 22, 0.9);
     }
-
-    #start_title {
-      color: #3FAF8F;
+    p {
+      background: rgba(138, 206, 22, 0.9);
+      box-shadow: 8px 8px 0px rgba(37, 110, 3, 0.5);
     }
+  }
 
-    #end_title {
-      color: #D79E3A;
+  #frontpage-end {
+    h3 {
+      color: rgba(236, 210, 11, 0.9);
     }
-
-    #start_duration {
-      background: #3FAF8F;
-    }
-
-    #end_duration {
-      background: #D79E3A;
+    p {
+      background: rgba(236, 210, 11, 0.9);
+      box-shadow: 8px 8px 0px rgba(49, 40, 0, 0.5);
     }
   }
 }
@@ -562,19 +563,22 @@ ol li {
     }
 
     #frontpage-subtitle-div {
-        #frontpage-subtitle-left { 
-          width: 80%;
+      #frontpage-subtitle-left { 
+        width: 80%;
+        align-items: center;
+        
+        #frontpage-startend-div {
+          flex-direction: column;
+          text-align: center;
           align-items: center;
-
-          #frontpage-startend-div {
-            flex-direction: column;
-            text-align: center;
-            align-items: center;
-
-            .frontpage-startend {
-              width: 300px;
-            }
+        
+          .frontpage-startend {
+            width: 300px;
+          }
         }
+      }
+      #frontpage-subtitle-right {
+        width: 80%;
       }
     }
 
@@ -636,4 +640,12 @@ ol li {
     }
 
   }
+}
+
+@media screen and (max-width: 800px) {
+    /* info screen */
+    #start_end_holder {
+      flex-direction: column;
+      align-items: center;
+    }
 }
