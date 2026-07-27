@@ -470,7 +470,6 @@ body {
       width: 200px;
     }
   }
-
 }
 
 /* Info Screen (probably) */
@@ -520,6 +519,15 @@ ul li {
 }
 ol li {
   list-style-type: decimal;
+}
+
+.frontpage-button {
+  transition-duration: 0.2s;
+  
+}
+
+.frontpage-button:hover {
+  scale: 1.1;
 }
 
 /* who even plays ctfs on mobile */
