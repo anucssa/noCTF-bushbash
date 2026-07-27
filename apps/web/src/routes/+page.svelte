@@ -72,7 +72,7 @@
   <div class="frontpage-section" id="frontpage-events-div">
     <div id="frontpage-events-left">
       <p>
-        From ANU? Come along to our Bush Week Tech Fest running this weekend!
+        In Canberra, or looking to join us in-person at ANU? Come along to our Bush Week Tech Fest running this weekend!
       </p>
       <ul>
         <li>Cyber Talks</li>
