@@ -142,9 +142,10 @@ body {
 
 .navbar_logo {
   min-width: 150px;
+  filter: drop-shadow(8px 8px 0px #271f1788)
 }
 #navbar-bushbash {
-  width: 30vw;
+  width: 20vw;
   transform: rotate(10deg);
 } 
 #navbar-cssasign {
