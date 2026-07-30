@@ -93,6 +93,7 @@ body {
 .challenge_container {
   height: 100%;
   width: 1500px;
+  padding-bottom: 100px;
 }
 
 .challenge_card_title {
