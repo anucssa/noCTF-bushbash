@@ -137,7 +137,7 @@ body {
 
 .navbar_div {
   align-items: flex-start;
-  z-index: 2;
+  z-index: 11;
 }
 
 .navbar_left {
