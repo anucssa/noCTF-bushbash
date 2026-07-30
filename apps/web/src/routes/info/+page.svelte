@@ -43,9 +43,19 @@
       Do not attack anything other than the provided infrastructure. In particular, please refrain
       from abusing any services hosted by ANU.
     </li>
+    <li>
+      Please avoid conducting any DoS/brute force attacks on the infrastructure - it will never be the intended solution.
+    </li>
     <li>Do not share flags or solutions publicly or with other teams.</li>
     <li>If you find a correct flag, please don't hold it until the last minute - this
       ensures the scoreboard always reflects the true progress of each team.
+    </li>
+    <li>
+      The use of AI for assistance in research/development is permitted, although we encourage players to develop solutions with their own capacity.
+    </li>
+    <li>
+      While general AI usage is allowed, <strong>the use of any Agentic AI Solvers and any other automated CTF solvers is prohibited.</strong>
+      Any suspected teams will be investigated and may be ineligible for prizes and/or removed from the scoreboard.
     </li>
     <li>
       Decisions made by the CSSA are final.
