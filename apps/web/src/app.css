@@ -83,19 +83,30 @@ body {
   margin-bottom: 20px;
 }
 
-.challenge_container {
-  min-width: 1500px;
+.challenge_outer_container {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 0;
+  margin: 0;
+  scrollbar-width: none;
 }
-
+.challenge_container {
+  height: 100%;
+  width: 1500px;
+}
 
 .challenge_card_title {
   font-size: 15px;
 }
 
+.challenge_unsolved {
+  background: #1c1d28;
+}
+
 .challenge_card_button {
   width: 224px;
   height: 128px;
-  background-size: 100%;
+  background-size: cover;
   background-position: 0 0;
 
   img {
@@ -106,6 +117,7 @@ body {
     z-index: -10;
   }
 }
+
 
 .canvas_holder {
   position: fixed;
@@ -124,7 +136,7 @@ body {
 
 .navbar_div {
   align-items: flex-start;
-  z-index: 999;
+  z-index: 2;
 }
 
 .navbar_left {
@@ -137,9 +149,10 @@ body {
 
 .navbar_logo {
   min-width: 150px;
+  filter: drop-shadow(8px 8px 0px #271f1788)
 }
 #navbar-bushbash {
-  width: 30vw;
+  width: 20vw;
   transform: rotate(10deg);
 } 
 #navbar-cssasign {
