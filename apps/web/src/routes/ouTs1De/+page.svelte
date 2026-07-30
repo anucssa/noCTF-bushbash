@@ -1,4 +1,4 @@
-<div class="h-80 flex justify-center items-end home_div" id="info_div_container">
+<div class="h-80 flex justify-center items-end home_div">
   <script src="https://kit.fontawesome.com/8ac6ea753d.js" crossorigin="anonymous"></script>
   <div id="outside-smth-div" hidden>
     ...what? you thought the outside was real?

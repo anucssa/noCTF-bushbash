@@ -93,6 +93,7 @@ body {
 .challenge_container {
   height: 100%;
   width: 1500px;
+  padding-bottom: 100px;
 }
 
 .challenge_card_title {
@@ -134,9 +135,69 @@ body {
   }
 }
 
+#square-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding-bottom: 100px;
+
+  .square-column {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+
+    .square {
+      padding: 8px;
+      font-size: 20px;
+      background: #1c1d28;
+      box-shadow: 4px 4px 0px #05010888;
+      /* #050108 #d79e3a */
+    }
+
+    @media screen and (aspect-ratio: 6/7) {
+      #square-6,#square-20,#square-23,#square-36,#square-44,#square-52,#square-55,#square-60{
+        background: #d79e3a;
+        color: #050108;
+      }
+    }
+
+    @media screen and (pointer: coarse) {
+      #square-22,#square-28,#square-49,#square-52,#square-58,#square-61{
+        background: #d79e3a;
+        color: #050108;
+      }
+    }
+
+    @media print and (orientation: landscape) {
+      #square-2,#square-9,#square-17,#square-23,#square-31,#square-34,#square-47,#square-50{
+        background: #d79e3a;
+        color: #050108;
+      }
+    }
+
+    @media (monochrome) {
+      #square-12,#square-33,#square-59,#square-63{
+        background: #d79e3a;
+        color: #050108;
+      }
+    }
+
+    @media screen and (-webkit-device-pixel-ratio: 3) {
+      #square-7,#square-21,#square-24,#square-38,#square-52,#square-64{
+        background: #d79e3a;
+        color: #050108;
+      }
+    }
+
+  }
+}
+
 .navbar_div {
   align-items: flex-start;
-  z-index: 2;
+  z-index: 11;
 }
 
 .navbar_left {
