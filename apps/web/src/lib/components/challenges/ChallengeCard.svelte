@@ -40,14 +40,14 @@
   }
 
   export function themeToSrc(theme: string, isSolved: boolean): string {
-    const TOP = "https://disorientation.cssa.club/files/";
+    const TOP = "https://u.cubeupload.com/oreophone/";
     switch (theme) {
-      case "theme-spiral": return TOP + (isSolved ? "card-spiral-solved.gif" : "card-spiral.gif");
-      case "theme-dna": return TOP + (isSolved ? "card-dna-solved.png" : "card-dna.png");
-      case "theme-explosion": return TOP + (isSolved ? "card-explosion-solved.gif" : "card-explosion.gif");
-      case "theme-cssa": return TOP + (isSolved ? "card-cssa-solved.gif" : "card-cssa.gif");
-      case "theme-atom": return TOP + (isSolved ? "card-atom-solved.gif" : "card-atom.gif");
-      case "theme-canberra": return TOP + (isSolved ? "card-canberra-solved.png" : "card-canberra.png");
+      case "theme-spiral": return TOP + (isSolved ? "cardspiralsolved.gif" : "cardspiral.gif");
+      case "theme-dna": return TOP + (isSolved ? "carddnasolved.png" : "carddna.png");
+      case "theme-explosion": return TOP + (isSolved ? "cardexplosionsolved.gif" : "cardexplosion.gif");
+      case "theme-cssa": return TOP + (isSolved ? "cardcssasolved.gif" : "cardcssa.gif");
+      case "theme-atom": return TOP + (isSolved ? "cardatomsolved.gif" : "cardatom.gif");
+      case "theme-canberra": return TOP + (isSolved ? "cardcanberrasolved.png" : "cardcanberra.png");
       default: return "";
     }
   }
@@ -66,8 +66,8 @@
 </script>
 
 <button
-  style={(data.hidden || chainedSolved === false) ? "z-index: 1" : "" /* hack to fix tooltips being hidden with opacity-40 */}
-  class={`text-left card w-60 h-32 pop ${data.isSolved ? "bg-primary text-primary-content" : "bg-base-100"} rounded-lg shadow-black ${(data.hidden || chainedSolved === false) ? "opacity-40" : ""}`}
+  style={(data.hidden || chainedSolved === false) ? "z-index: 1" : "" /* hack to fix tooltips being hidden with opacity-40 */ + "background-image: url(" + themeToSrc(getTheme(data.categories), data.isSolved) + ");"}
+  class={`challenge_card_button text-left card w-60 h-32 pop ${data.isSolved ? "bg-primary text-primary-content" : "bg-base-100"} rounded-lg shadow-black ${(data.hidden || chainedSolved === false) ? "opacity-40" : ""}`}
   onclick={() => onclick(data)}
   disabled={!authState.isAdmin && chainedSolved === false}
 >

@@ -95,7 +95,7 @@ body {
 .challenge_card_button {
   width: 224px;
   height: 128px;
-  background-size: 100%;
+  background-size: cover;
   background-position: 0 0;
 
   img {
