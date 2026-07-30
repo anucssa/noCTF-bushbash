@@ -83,10 +83,17 @@ body {
   margin-bottom: 20px;
 }
 
-.challenge_container {
-  min-width: 1500px;
+.challenge_outer_container {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 0;
+  margin: 0;
+  scrollbar-width: none;
 }
-
+.challenge_container {
+  height: 100%;
+  width: 1500px;
+}
 
 .challenge_card_title {
   font-size: 15px;

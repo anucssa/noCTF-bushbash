@@ -213,7 +213,7 @@
           onFilter={(res) => (challenges = res)}
         />
       </div>
-
+      <div class="challenge_outer_container">
       <div class="flex gap-6 h-fit justify-center challenge_container">
         {#if challenges !== undefined && Object.keys(challengesByCategory).length > 0}
           {#each Object.entries(challengesByCategory) as [category, categoryChallenges] (category)}
@@ -246,6 +246,7 @@
           </p>
         {/if}
       </div>
+    </div>
 
     <ChallengeModal
       visible={modalVisible}
