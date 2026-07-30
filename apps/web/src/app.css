@@ -160,6 +160,16 @@ body {
   }
 }
 
+#outside-yes-div {
+  display: hidden;
+}
+#outside-no-div {
+  display: hidden;
+}
+#outside-smth-div {
+  display: hidden;
+}
+
 
 /* Home Screen */
 
