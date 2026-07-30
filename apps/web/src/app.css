@@ -92,6 +92,10 @@ body {
   font-size: 15px;
 }
 
+.challenge_unsolved {
+  background: #1c1d28;
+}
+
 .challenge_card_button {
   width: 224px;
   height: 128px;
@@ -106,6 +110,7 @@ body {
     z-index: -10;
   }
 }
+
 
 .canvas_holder {
   position: fixed;

@@ -67,7 +67,7 @@
 
 <button
   style={(data.hidden || chainedSolved === false) ? "z-index: 1" : "" /* hack to fix tooltips being hidden with opacity-40 */ + "background-image: url(" + themeToSrc(getTheme(data.categories), data.isSolved) + ");"}
-  class={`challenge_card_button text-left card w-60 h-32 pop ${data.isSolved ? "bg-primary text-primary-content" : "bg-base-100"} rounded-lg shadow-black ${(data.hidden || chainedSolved === false) ? "opacity-40" : ""}`}
+  class={`challenge_card_button text-left card w-60 h-32 pop ${data.isSolved ? "bg-primary text-primary-content" : "bg-base-100 challenge_unsolved"} rounded-lg shadow-black ${(data.hidden || chainedSolved === false) ? "opacity-40" : ""}`}
   onclick={() => onclick(data)}
   disabled={!authState.isAdmin && chainedSolved === false}
 >
